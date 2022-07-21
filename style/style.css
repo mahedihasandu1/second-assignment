@@ -14,6 +14,7 @@ body{
      margin-left: 10%;
      margin-right: 8%;
      height: 650px;
+     margin-top: 30px;
 }
 .top-banner img{
       height: 680px;
@@ -141,6 +142,23 @@ i{
         margin-left:25%;
         margin-bottom: 100px;
       }
+      /* viwe all  */
+      .view{ 
+        align-items: center;
+        justify-content: center;
+        margin:40px 0 40px 330px ;
+        visibility: hidden;
+       
+      }
+      .view a{
+        text-decoration: none;
+        border: 1px solid red;
+        color: white;
+        background-color: red;
+        padding: 5px 15px;
+        font-size: 25px;
+       border-radius: 5px;
+      }
       /* footer styele */
       .footer{
         background-color: black;
@@ -163,19 +181,19 @@ i{
         padding: 30px 0 ;
       }
       /* media query breakpoint for mobile  */
-      @media only screen and (max-width:688px)  {
+      @media screen and (max-width:688px)  {
         body{
             margin: 0;
             padding: 0;
-    
         }   
         .top-banner{
             margin-top: 50px;
-            width:90vw;
+            width:68vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
             height: 550px;
+            margin-right: 40px;
         }
         h1{
             margin-top: 20px;
@@ -192,11 +210,11 @@ i{
             text-align: start;
         } 
         .link{
-            margin:-10px;
+            margin:-20px;
             padding-left: 20px;
         }
         .upcoming-link{
-            margin-left:85px;
+            margin-left:70px;
             padding: 0;
             background-color: white;
             justify-content: center;
@@ -210,7 +228,7 @@ i{
         .live-match{
             display:grid;
             grid-template-rows: repeat(1,1fr);
-            margin-left:55px ;
+            margin-left:30px ;
             margin-right: 0;
             margin-bottom:40px;
         }
@@ -226,7 +244,7 @@ i{
       }
       .footer{
         justify-content: center;
-        width: 121%;
+        width: 110%;
       }
       .footer h1{
         margin: 0 0 0 70px;
@@ -237,9 +255,12 @@ i{
         justify-content: center;
         padding-left: 150px;
       }
+      .view{
+        visibility: hidden;
+      }
     }
     /* tablate view media query  */
-    @media  only screen and (min-width:689px) and (max-width:992px) {
+    @media screen and (min-width:689px) and (max-width:992px) {
      body{
         margin: 0;
         padding: 0;
@@ -275,12 +296,17 @@ i{
         margin-right: 40px;
         padding-right: 40px;
         height: 340px;
-        width:290px;
+        width:280px;
     }
     .upcoming-link{
         display: flex;
         flex-direction: column;
         background-color: white;
+        justify-content: flex-start;
+        padding: 0p;
+        margin:30px 0 10px 60px ;
+
+
     }
     .half-second{
         display: grid;
@@ -307,12 +333,16 @@ i{
       }
       .footer-style{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-       font-size: 16px;
+        grid-template-columns: repeat(2,1fr);
        padding-right: -50;
        padding-left: -50;
-      margin-left: 20px; 
+      margin-left: 40px; 
       margin-right: 20px;
     }
-
+    @media only  screen and (min-width:687px) and (max-width:992px) {
+.view{
+    visibility: visible;
 }
+        
+    }
+    }
